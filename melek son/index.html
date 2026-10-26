@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meleğin Takı Dünyası</title>
+<meta name="description" content="Meleğin Takı Dünyası — A kalite, solmayan imitasyon takılar. Yüzük, kolye, küpe, bileklik ve setler. 1.000 ₺ üzeri kargo bedava.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 4 6 15l14 21L34 15z' fill='none' stroke='%23B8923A' stroke-width='2.4' stroke-linejoin='round'/%3E%3Cpath d='M6 15h28M13 15l7-11 7 11M13 15l7 21 7-21' fill='none' stroke='%23B8923A' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meleğin Takı Dünyası">
+<meta property="og:description" content="A kalite, solmayan imitasyon takılar. 1.000 ₺ üzeri kargo bedava, hediyeni sen seç.">
+<meta name="theme-color" content="#FBEFEC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="atla" href="#koleksiyon">İçeriğe atla</a>
+
+<!-- ===== KAYAN DUYURU ŞERİDİ ===== -->
+<div class="serit" aria-hidden="true">
+  <div class="serit__ray" id="seritRay"></div>
+</div>
+
+<!-- ===== ÜST BAR ===== -->
+<header class="ustbar" id="ustbar">
+  <a class="marka" href="#tepe" aria-label="Meleğin Takı Dünyası ana sayfa">
+    <svg class="marka__mark" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#F3DFA4"/><stop offset="52%" stop-color="#C99B32"/><stop offset="100%" stop-color="#8E6A18"/>
+      </linearGradient></defs>
+      <path d="M20 3 L34 14 L20 37 L6 14 Z" fill="none" stroke="url(#lg)" stroke-width="1.8"/>
+      <path d="M6 14 L34 14 M20 3 L13 14 L20 37 L27 14 Z" fill="none" stroke="url(#lg)" stroke-width="1.1" opacity=".75"/>
+    </svg>
+    <span class="marka__yazi">
+      <span class="marka__ad">MELEĞİN TAKI DÜNYASI</span>
+      <span class="marka__alt">A KALİTE İMİTASYON TAKI</span>
+    </span>
+  </a>
+
+  <nav class="menu" id="anaMenu" aria-label="Ana menü">
+    <a href="#koleksiyon">Koleksiyon</a>
+    <a href="#kampanya">Ücretsiz Kargo</a>
+    <a href="#konsept">Konsept Günleri</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <div style="display:flex;gap:10px;align-items:center">
+    <button class="ikon-btn" id="sepetBtn" aria-label="Sepeti aç">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      <span class="rozet" id="sepetSayi">0</span>
+    </button>
+    <button class="ikon-btn menu-btn" id="menuBtn" aria-label="Menüyü aç">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ===== VİTRİN ===== -->
+<section class="vitrin" id="tepe">
+  <canvas id="isilti" aria-hidden="true"></canvas>
+  <div class="vitrin__ic">
+    <div class="vitrin__yazi">
+      <span class="etiket">A kalite · Solmayan imitasyon takı</span>
+      <h1>Her parça, <em>bir ışık</em> hikâyesi.</h1>
+      <p class="lede">A kalite, solmayan imitasyon takılar. Vitrinimiz her mevsim yeni bir konseptle yenileniyor — ve 1.000 ₺ ve üzeri alışverişlerde <strong style="color:var(--altin-par);font-weight:500">kargo bedava, hediyeni sen seçiyorsun.</strong></p>
+      <div class="btn-grup">
+        <a class="btn btn--altin" href="#koleksiyon">Koleksiyonu keşfet</a>
+        <a class="btn btn--hayalet" href="#kampanya">Ücretsiz kargo</a>
+      </div>
+      <ul class="guven">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg><span><span id="kargoLimit">1.000 ₺</span> üzeri kargo ücretsiz</span></li>
+      </ul>
+    </div>
+
+    <div class="vitrin__sahne" id="vitrinSahne">
+      <div class="mucevher" id="heroJewel"></div>
+      <div class="kaide"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KARGO ÇİZELGESİ ===== -->
+<section class="kampanya" id="kampanya">
+  <div class="kampanya__ic">
+    <div class="kargo-grafik" id="kargoGrafik">
+      <div class="kargo-grafik__ust">
+        <strong id="bantDurum">Sepetin boş</strong>
+        <span id="bantAlt">Ücretsiz kargoya 1.000 ₺ kaldı</span>
+      </div>
+      <div class="kargo-yol" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="0" id="kargoYol">
+        <i id="bantIlerle"></i>
+      </div>
+      <div class="kargo-olcek"><span>0 ₺</span><span>250 ₺</span><span>500 ₺</span><span>750 ₺</span><span id="bantLimit">1.000 ₺</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KOLEKSİYON ===== -->
+<section class="bolum" id="koleksiyon">
+  <div class="bolum-bas">
+    <span class="etiket">Koleksiyon</span>
+    <div class="cizik"></div>
+    <h2>Vitrindeki parçalar</h2>
+    <p class="lede">1.000 ₺ ve üzeri alışverişlerde kargo bedava ve hediyeni sen seçiyorsun. Sorularını WhatsApp'tan yazabilirsin.</p>
+  </div>
+
+  <div class="filtre">
+    <div id="filtreCipler" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+    <label class="sr" for="siralaSec">Sırala</label>
+    <select class="sirala" id="siralaSec">
+      <option value="onerilen">Önerilen sıralama</option>
+      <option value="ucuz">Artan fiyat</option>
+      <option value="pahali">Azalan fiyat</option>
+      <option value="yeni">Yeni gelenler</option>
+    </select>
+  </div>
+
+  <p style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--metin-2);margin-bottom:20px" id="urunSayi"></p>
+  <div class="izgara" id="urunIzgara"></div>
+  <p class="bos-durum" id="bosDurum" hidden>Bu kategoride şu an parça yok.</p>
+</section>
+
+<!-- ===== KONSEPT GÜNLERİ ===== -->
+<div class="konsept-alan">
+  <section class="bolum" id="konsept">
+    <div class="bolum-bas">
+      <span class="etiket">Konsept günleri</span>
+      <div class="cizik"></div>
+      <h2>Vitrin, takvime göre değişir</h2>
+      <p class="lede">Belirli dönemlerde vitrini baştan kuruyoruz: seçki, renk ve hediye ayrıcalığı o konsepte göre değişir. Aşağıdaki kartlara dokunarak her konsepti önizleyebilirsin — site anında o günün rengine döner.</p>
+    </div>
+
+    <div class="konsept-aktif beliren" id="konseptAktif" hidden></div>
+    <div class="konsept-liste" id="konseptListe"></div>
+  </section>
+</div>
+
+<!-- ===== İLETİŞİM ===== -->
+<section class="bolum" id="iletisim">
+  <div class="iletisim-izgara">
+    <div>
+      <div class="bolum-bas">
+        <span class="etiket">Bülten</span>
+        <div class="cizik"></div>
+        <h2>Yeni konseptten ilk sen haberdar ol</h2>
+        <p class="lede">Vitrin değiştiğinde, yeni parçalar geldiğinde ve özel günlerde tek bir e-posta gönderiyoruz. Daha fazlası yok.</p>
+      </div>
+      <form class="form" id="bultenForm" novalidate>
+        <div class="ikili">
+          <div class="alan">
+            <label for="bultenAd">Adın</label>
+            <input id="bultenAd" type="text" placeholder="Zeynep" autocomplete="given-name">
+          </div>
+          <div class="alan">
+            <label for="bultenEposta">E-posta</label>
+            <input id="bultenEposta" type="email" placeholder="ornek@eposta.com" autocomplete="email" required>
+          </div>
+        </div>
+        <button class="btn btn--altin" type="submit">Bültene katıl</button>
+        <p style="font-size:.76rem;color:var(--metin-2)">E-postanı kimseyle paylaşmıyoruz, istediğin an çıkabilirsin.</p>
+      </form>
+    </div>
+
+    <div>
+      <div class="bolum-bas" style="margin-bottom:24px">
+        <span class="etiket">Bize ulaş</span>
+        <div class="cizik"></div>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem)">Sorunu sor, ölçünü söyle</h2>
+      </div>
+      <ul class="bilgi-liste">
+        <li><span>WhatsApp / Telefon</span><b data-bilgi="telefon">+90 531 331 25 17</b>
+          <span style="display:flex;gap:18px"><button class="kopyala" data-kopyala-bilgi>Kopyala</button>
+          <a class="kopyala" id="waIletisim" href="https://wa.me/905313312517" target="_blank" rel="noopener noreferrer">WhatsApp'tan yaz</a></span></li>
+        <li><span>E-posta</span><b data-bilgi="eposta">meleksavasliogli@gmail.com</b>
+          <button class="kopyala" data-kopyala-bilgi>Kopyala</button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== ALT BİLGİ ===== -->
+<footer class="altbilgi">
+  <div class="altbilgi__ic">
+    <div>
+      <span class="marka__ad">MELEĞİN TAKI DÜNYASI</span>
+      <p style="margin-top:14px;max-width:38ch;font-size:.88rem">A kalite, solmayan imitasyon takılar. Sipariş ve sorularınız için WhatsApp'tan yazabilirsiniz.</p>
+    </div>
+    <div>
+      <h4>Koleksiyon</h4>
+      <ul>
+        <li><a href="#koleksiyon" data-kat="Yüzük">Yüzük</a></li>
+        <li><a href="#koleksiyon" data-kat="Kolye">Kolye</a></li>
+        <li><a href="#koleksiyon" data-kat="Küpe">Küpe</a></li>
+        <li><a href="#koleksiyon" data-kat="Bileklik">Bileklik</a></li>
+        <li><a href="#koleksiyon" data-kat="Halhal">Halhal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Bilgi</h4>
+      <ul>
+        <li><a href="#kampanya">Ücretsiz kargo</a></li>
+        <li><a href="#konsept">Konsept günleri</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="altbilgi__son">
+    <span>© <span id="yil">2026</span> <span data-bilgi="marka">Meleğin Takı Dünyası</span> · Tüm hakları saklıdır.</span>
+  </div>
+</footer>
+
+<!-- ===== SEPET ÇEKMECESİ ===== -->
+<div class="perde" id="perde"></div>
+<aside class="cekmece" id="cekmece" aria-hidden="true" aria-label="Sepet">
+  <div class="cekmece__bas">
+    <h3>Sepetin</h3>
+    <button class="kapat" id="cekmeceKapat" aria-label="Sepeti kapat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="kargo-cubuk">
+    <span id="kargoYazi">Ücretsiz kargo</span>
+    <div class="ilerle"><i id="kargoIlerle"></i></div>
+  </div>
+
+  <div class="sepet-liste" id="sepetListe"></div>
+
+  <div class="cekmece__alt">
+    <div class="ozet-satir"><span>Ara toplam</span><span id="ozetAra">0 ₺</span></div>
+    <div class="ozet-satir"><span>Kargo</span><span id="ozetKargo">—</span></div>
+    <div class="ozet-satir ozet-satir--toplam"><span>Toplam</span><b id="ozetToplam">0 ₺</b></div>
+    <button class="btn btn--altin btn--genis" id="odemeGec" disabled>Ödemeye geç</button>
+  </div>
+</aside>
+
+<!-- ===== ÜRÜN DETAY ===== -->
+<div class="modal" id="urunModal" hidden>
+  <div class="modal__kutu">
+    <button class="modal__kapat" id="urunModalKapat" aria-label="Kapat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="urunDetayIcerik"></div>
+  </div>
+</div>
+
+<!-- ===== ÖDEME ===== -->
+<div class="modal" id="odemeModal" hidden>
+  <div class="modal__kutu modal__kutu--dar">
+    <button class="modal__kapat" id="odemeModalKapat" aria-label="Kapat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="odemeIcerik"></div>
+  </div>
+</div>
+
+<a class="wa-btn" id="waBtn" href="https://wa.me/905313312517" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yaz">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.27.63 4.4 1.74 6.21L4 28l6.9-1.7a12.03 12.03 0 0 0 5.14 1.15C22.68 27.45 28 22.05 28 15.4 28 8.4 22.68 3 16.04 3Zm0 21.95c-1.8 0-3.5-.5-4.96-1.38l-.36-.21-4.1 1.01 1.1-3.99-.23-.37a9.9 9.9 0 0 1-1.5-5.3c0-5.5 4.5-9.97 10.05-9.97 5.55 0 10.04 4.47 10.04 9.97 0 5.5-4.5 9.97-10.04 9.97Zm5.5-7.45c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.95 1.18-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.52-.07-.15-.68-1.63-.93-2.24-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.38-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.36.2 1.88.12.57-.08 1.78-.72 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.12-.28-.2-.58-.35Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div class="toastlar" id="toastlar" aria-live="polite"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

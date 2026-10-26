@@ -1,0 +1,62 @@
+[
+  {
+    "id": "h-01",
+    "ad": "Mini Halka Küpe",
+    "aciklama": "Hafif, günlük kullanıma uygun küpe.",
+    "tip": "kupe",
+    "metal": "altin",
+    "tas": "beyaz",
+    "stok": 50,
+    "aktif": true,
+    "gorsel": "",
+    "olusturma": "2026-10-26T15:34:35.079Z"
+  },
+  {
+    "id": "h-02",
+    "ad": "İnce Zincir Bileklik",
+    "aciklama": "İnce zincirli, sade bileklik.",
+    "tip": "bileklik",
+    "metal": "gumus",
+    "tas": "beyaz",
+    "stok": 50,
+    "aktif": true,
+    "gorsel": "",
+    "olusturma": "2026-10-26T15:34:35.079Z"
+  },
+  {
+    "id": "h-03",
+    "ad": "Kalpli Kolye",
+    "aciklama": "Minik kalp uçlu zarif kolye.",
+    "tip": "kolye",
+    "metal": "rose",
+    "tas": "beyaz",
+    "stok": 50,
+    "aktif": true,
+    "gorsel": "",
+    "olusturma": "2026-10-26T15:34:35.079Z"
+  },
+  {
+    "id": "h-04",
+    "ad": "Taşlı Yüzük",
+    "aciklama": "Ayarlanabilir, taşlı yüzük.",
+    "tip": "yuzuk",
+    "metal": "altin",
+    "tas": "ametist",
+    "stok": 50,
+    "aktif": true,
+    "gorsel": "",
+    "olusturma": "2026-10-26T15:34:35.079Z"
+  },
+  {
+    "id": "h-05",
+    "ad": "Nazar Halhal",
+    "aciklama": "Nazar boncuklu ince halhal.",
+    "tip": "halhal",
+    "metal": "gumus",
+    "tas": "safir",
+    "stok": 50,
+    "aktif": true,
+    "gorsel": "",
+    "olusturma": "2026-10-26T15:34:35.079Z"
+  }
+]
